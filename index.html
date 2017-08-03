@@ -2,9 +2,9 @@
 layout: default
 title: Digital Promise
 ---
-<h1>People involved in the Digital Promise</h1>
+<h1>People involved in the organization Digital Promise</h1>
 
-<!-- Foundations -->
+<!-- People -->
 {% assign people = site.data.people %}
 {% assign people = people | sort:"Name" %}
 
@@ -12,7 +12,7 @@ title: Digital Promise
 
 {% for person in people %}
 
-<p><strong>{{ person.Name }}</strong>: 
+<p><strong>{{ person.Name }}</strong></p>
 
 <p>{{ person.Organization }}, Role: {{ person.Role }}</p>
 
