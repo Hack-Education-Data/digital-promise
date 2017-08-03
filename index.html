@@ -1,0 +1,21 @@
+---
+layout: default
+title: Digital Promise
+---
+<h1>People involved in the Digital Promise</h1>
+
+<!-- Foundations -->
+{% assign people = site.data.people %}
+{% assign people = people | sort:"Name" %}
+
+<!-- Document -->
+
+{% for person in people %}
+
+<p><strong>{{ person.Name }}</strong>: 
+
+<p>{{ person.Organization }}, Role: {{ person.Role }}</p>
+
+<hr >
+{% endfor %}
+
