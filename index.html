@@ -1,21 +1,12 @@
 ---
 layout: default
-title: Digital Promise
+title: Digital Promise's Network
 ---
-<h1>People involved in the organization Digital Promise</h1>
 
-<!-- People -->
-{% assign people = site.data.people %}
-{% assign people = people | sort:"Name" %}
+<h1>The Digital Promise Network</h1>
 
-<!-- Document -->
-
-{% for person in people %}
-
-<p><strong>{{ person.Name }}</strong></p>
-
-<p>Organization: {{ person.Organization }}, Role: {{ person.Role }}</p>
-
-<hr >
-{% endfor %}
+<ul>
+  <li><a href="people.html">People</a></li>
+  <li><a href="investors.html">Investors</a></li>
+</ul>
 
